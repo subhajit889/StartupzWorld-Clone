@@ -1,0 +1,49 @@
+.categoryStore {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .singelBox {
+      width: 310px;
+      height: 100px;
+      margin: 15px;
+      padding: 5px;
+      font-size: 20px;
+      border: 2px solid #4d4747;
+      /* box-shadow: -5px 5px 5px -5px; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.7s ease;
+  }
+  .singelBox:hover{
+      background-color: #FF7175;
+      color: #fff;
+     
+      border-radius: 4px;
+      transform: scale(1.2); 
+  }
+  
+
+  /* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    .categoryStore {
+      padding: 30px;
+    }
+    .singelBox {
+      width: 100%;
+      margin: 10px;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .categoryStore {
+      padding: 40px;
+    }
+  }
+  

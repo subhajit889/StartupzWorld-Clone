@@ -1,0 +1,131 @@
+.main {
+    position: relative;
+    padding: 0 2 rem;
+  }
+  .navbar {
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .logo img {
+    margin-top: 2px;
+    width: 90px;
+  }
+  .link {
+    display: flex;
+    gap: 2rem;
+  }
+  .link li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .business-btn , .user-btn{
+    background: transparent;
+    color: #0a0a0a;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .loginOptions a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .toggleBtn {
+    color: #070707;
+    cursor: pointer;
+    display: none;
+  }
+  .toggleBtn img {
+    width: 1.5rem;
+  }
+  .actionBtn {
+    background-color: #FF7175;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .actionBtn:hover {
+    scale: 1.05;
+    color: #fff;
+  }
+  .actionBtn:active {
+    scale: 0.95;
+  }
+  /* Dropdown Menu */
+  .dropDownMenu {
+    position: fixed;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .dropDownMenu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dropDownMenu li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .dropDownMenu .actionBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 992px) {
+    .dropDownMenu {
+      display: none;
+    }
+  }
+  @media (max-width: 992px) {
+    .link,
+    .navbar .actionBtn {
+      display: none;
+    }
+    .toggleBtn {
+      display: block;
+    }
+    .dropDownMenu {
+      display: block;
+    }
+  }
+  @media (max-width: 576px) {
+    .dropDownMenu {
+      left: 2rem;
+      width: unset;
+    }
+  }
+  

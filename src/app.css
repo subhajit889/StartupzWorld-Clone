@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100%;
+    color: #000000;
+  }
+  img{
+    width: 20px;
+  }
+  
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color:#070707;
+    font-size: 1.5rem;
+  }
+  a:hover{
+    color: rgb(189, 58, 18);
+  }
